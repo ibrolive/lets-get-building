@@ -26,8 +26,6 @@ gem 'uglifier',     '>= 3.2.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
-gem 'pg', '>= 1.1.4'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -42,7 +40,7 @@ group :development do
   gem 'spring', '>= 2.0.2'
   gem 'spring-watcher-listen', '>= 2.0.1'
 # Use sqlite3 as the database for Active Record
-  # gem 'sqlite3', '1.3.13'
+  gem 'sqlite3', '>= 1.3.13'
   gem 'web-console', '>= 3.3.0'
 end
 
@@ -60,6 +58,7 @@ group :test do
 end
 
 group :production do
+  gem 'pg', '>= 1.1.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
